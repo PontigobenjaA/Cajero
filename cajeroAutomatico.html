@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="tarea.css">
+</head>
+  <body>
+    <div id="form">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nombre de Usuario</label>
+          <input id="usua" type="email" class="form-control"  aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input  id="contraseña" type="password" class="form-control" >
+        </div>
+        <button id="boton" type="button" class="btn btn-outline-warning">Ingresar</button>
+    </div>
+    <header>
+        <nav  id="navbar" class="navbar navbar-expand-lg bg-body-tertiary" style="display: none;">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand"><img src="./img/la-banca-movil.png" alt="banco" style="width: 30px; height: 30px;">BancoEP</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Usuarios</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
+                  <button class="btn btn-outline-warning" type="submit">Ir</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+    <main>
+        <section id="imagnescorridas" style="display: none;">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/digital.jpg" class="d-block w-100" alt="banco">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/El nuevo Banco Digital.jpg" class="d-block w-100" alt="banco">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="./img/playa.jpg" class="d-block w-100" alt="playa">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        
+        <div id="cartausuario" class="card" style="width: 18rem; display: none;">
+            <img src="./img/perfil.jpg" class="card-img-top" alt="perfil">
+            <div class="card-body">
+              <h5 id="apodo" class="card-title"></h5>
+              <p id="loquetienes" class="card-text"></p>
+              <p id="saldo" class="card-text"></p>
+              <p id="ingresa" class="card-text"></p>
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input id="capital" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              </div>
+              <button id="botonD" type="button" class="btn btn-outline-success">Depositar</button>
+              <button id="botonR" type="button" class="btn btn-outline-danger">Retirar</button>
+              <button id="nuevoSaldo" type="button" class="btn btn-outline-info">Consultar Saldo</button>
+            </div>
+          </div>
+    </main>
+    <script src="./control.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

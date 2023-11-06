@@ -1,0 +1,24 @@
+
+.carousel-inner img{
+    height: 400px;
+    object-fit: cover;
+}
+#form{
+    width: 30%;
+    margin-block: 30px;
+    margin: 0 auto;
+}
+#cartausuario{
+    width: 30%;
+    margin: 30px;
+    
+}
+#nuevoSaldo{
+    margin: 20px;
+}
+#botonD{
+    margin-right: 5px;
+}
+#botonR{
+    margin-left: 5px;
+}
